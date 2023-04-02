@@ -1,0 +1,683 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to top right, #002b5b, #002b5b, #0e8388, #19a7ce);
+  padding: 1% 10%;
+}
+
+.title {
+  color: #fff;
+  font-size: 21px;
+  user-select: none;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  height: 265px;
+  margin: 0 auto;
+  border: 1px solid black;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.par {
+  user-select: none;
+  margin: 20px 0 0 20px;
+}
+
+.par1 {
+  user-select: none;
+  margin: 20px 0 0 20px;
+}
+
+.searchinp {
+  margin: 0 auto;
+  width: 97%;
+  height: 55px;
+  padding: 10px 20px;
+  border: 3px double black;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.searchinp::placeholder {
+  color: #444;
+  font-size: 16px;
+  user-select: none;
+}
+
+.getBtn {
+  width: 120px;
+  height: 30px;
+  border: 1px solid black;
+  color: #fff;
+  background-color: black;
+  font-size: 20px;
+  margin: 0 auto;
+  border-radius: 3px;
+  padding: 3px 0 0 0;
+  margin-top: 40px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.getBtn:hover{
+  transform: scale(1.055);
+  transition: all 1s; 
+}
+
+.footer {
+  text-align: center;
+  width: 100%;
+  padding: 15px 0 0 0;
+  font-size: 20px;
+  color: #444;
+  margin-top: 90px;
+  height: 50px;
+  margin-bottom: 2px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* --------------------------------------------- */
+
+.about {
+  width: 90%;
+  margin: 20px auto;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+
+.about__section1 {
+  display: grid;
+  grid-template-columns: auto;
+  width: 30%;
+}
+
+.about__section2 {
+  display: grid;
+  grid-template-columns: auto;
+  width: 70%;
+}
+
+.profileimg {
+  width: 200px;
+  height: 180px;
+  margin: 10px auto;
+  border-radius: 3px;
+  margin-top: 30px;
+  user-select: none;
+}
+
+.profile_btn {
+  width: 70%;
+  padding: 8px 10px;
+  margin: 10px auto;
+  border: 1px solid rgb(3, 53, 253);
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  background: linear-gradient(to left, #576cbc, #002b5b, #00235b);
+  font-size: 17px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  transition: all 90ms;
+}
+
+.profile_btn:hover {
+  background-color: rgb(82, 119, 251);
+  border-color: rgb(82, 119, 251);
+}
+
+.profile_btn:hover {
+  transform: scale(1.025);
+}
+
+.activity {
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 15px 10px 0px 10px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.public_repos {
+  background: linear-gradient(to left, #0f0c29, #302b63, #24243e);
+}
+
+.publik_gists {
+  background: linear-gradient(to left, #7f00ff, #396afc);
+}
+
+.follower {
+  background: linear-gradient(to left, #0f9b0f, #000000, #0f9b0f);
+}
+
+.following {
+  background: linear-gradient(to left, #1cb5e0, #000046, #1cb5e0);
+}
+
+.paragraph {
+  display: inline-block;
+}
+
+.about_section--table {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tabletd {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 0;
+  border: 1px solid #000;
+  display: block;
+  user-select: none;
+}
+.company,
+.blog,
+.location {
+  border-bottom: none;
+}
+
+.company {
+  margin-top: -40px;
+}
+
+.repos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 10px auto;
+  padding: 20px 5% 20px 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.repo_name {
+  display: inline-block;
+}
+
+.statistc span {
+  display: inline-block;
+}
+
+.statis {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.stars {
+  background-color: #1d2671;
+}
+
+.watchers {
+  background-color: #000046;
+}
+
+.forks {
+  background-color: #0f9b0f;
+}
+
+.latest_repos {
+  margin-left: 10%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.repo_name {
+  color: rgb(3, 53, 253);
+  font-size: 18.72px;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 17px;
+  }
+  .header {
+    width: 100%;
+    height: 50px;
+    padding: 2% 10%;
+  }
+
+  .container {
+    width: 90%;
+    height: 240px;
+  }
+
+  .par {
+    margin: 20px 0 0 20px;
+    font-size: 24px;
+  }
+
+  .par1 {
+    margin: 15px 0 0 20px;
+    font-size: 15px;
+  }
+
+  .searchinp {
+    width: 93%;
+    height: 45px;
+    padding: 10px 20px;
+    border: 2px double black;
+  }
+
+  .getBtn {
+    width: 90px;
+    height: 25px;
+    font-size: 16px;
+    padding: 3px 0 0 0;
+    margin-top: 40px;
+  }
+
+  .footer {
+    width: 100%;
+    padding: 13px 0 0 0;
+    margin-top: 30px;
+    font-size: 17px;
+    height: 40px;
+    margin-bottom: 2px;
+  }
+
+  .activity {
+    padding: 5px 3px;
+    margin: 15px 0 0 0;
+    font-size: 14px;
+  }
+
+  .profileimg {
+    width: 170px;
+    height: 175px;
+    margin: 10px auto;
+    margin-top: 35px;
+    border: 1px solid black;
+  }
+
+  .about_section--table {
+    width: 100%;
+    margin-top: 6px;
+  }
+
+  .profile_btn {
+    width: 65%;
+    padding: 7px 3px;
+    margin: 5px auto;
+    font-size: 14px;
+    height: 30px;
+  }
+
+  .repos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px 20px 20px 20px;
+    height: 65px;
+    border-radius: 5px;
+  }
+
+  .repo_name {
+    display: inline-block;
+  }
+
+  .statistc span {
+    display: inline-block;
+  }
+
+  .statis {
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+}
+
+/* ================================================================================================ */
+
+@media only screen and (max-width: 576px) {
+  .title {
+    font-size: 17px;
+  }
+  .header {
+    width: 100%;
+    height: 50px;
+    padding: 2% 10%;
+  }
+
+  .container {
+    width: 90%;
+    height: 210px;
+  }
+
+  .par {
+    margin: 20px 0 0 20px;
+    font-size: 17px;
+  }
+
+  .par1 {
+    margin: 15px 0 0 20px;
+    font-size: 13px;
+  }
+
+  .searchinp {
+    width: 93%;
+    height: 35px;
+    padding: 10px 20px;
+    border: 2px double black;
+  }
+
+  .getBtn {
+    width: 75px;
+    height: 20px;
+    font-size: 13px;
+    padding: 2px 0 0 0;
+    margin-top: 40px;
+  }
+
+  .footer {
+    width: 100%;
+    padding: 13px 0 0 0;
+    margin-top: 30px;
+    font-size: 17px;
+    height: 40px;
+    margin-bottom: 2px;
+  }
+
+  .activity {
+    padding: 5px 3px;
+    margin: 0;
+    height: 25px;
+    font-size: 14px;
+  }
+
+  .profileimg {
+    width: 170px;
+    height: 175px;
+    margin: 10px auto;
+    margin-top: 35px;
+    border: 1px solid black;
+  }
+
+  .about_section--table {
+    width: 100%;
+    margin-top: 6px;
+  }
+
+  .profile_btn {
+    width: 65%;
+    padding: 7px 3px;
+    margin: 5px auto;
+    font-size: 14px;
+    height: 30px;
+  }
+
+  .repos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px 10px 20px 10px;
+    height: 65px;
+    border-radius: 5px;
+  }
+
+  .repo_name {
+    display: inline-block;
+  }
+
+  .statistc span {
+    padding: 2px 5px 0 5px;
+    font-size: 13px;
+    height: 20px;
+    display: inline-block;
+  }
+
+  .statis {
+    padding: 0px 10px;
+    border-radius: 5px;
+  }
+
+  .tabletd {
+    width: 86%;
+    padding: 14px 0 0 10px;
+    margin: 0 0 0 30px;
+    height: 44px;
+    border: 1px solid #000;
+    display: block;
+    user-select: none;
+  }
+
+  .about__section2--top {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: -143px;
+    top: 0;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 0;
+    width: 138%;
+  }
+
+  .company,
+  .blog,
+  .member,
+  .location {
+    font-size: 14px;
+    padding: 5px 0 0 10px;
+  }
+
+  .company {
+    margin-top: -60px;
+  }
+}
+
+/* ================================================================================================ */
+
+@media only screen and (max-width: 490px) {
+  .title {
+    font-size: 17px;
+  }
+  .header {
+    width: 100%;
+    height: 50px;
+    padding: 2% 10%;
+  }
+
+  .container {
+    width: 90%;
+    height: 210px;
+  }
+  .par {
+    margin: 20px 0 0 20px;
+    font-size: 17px;
+  }
+
+  .par1 {
+    margin: 15px 0 0 20px;
+    font-size: 13px;
+  }
+
+  .searchinp {
+    width: 93%;
+    height: 35px;
+    padding: 10px 20px;
+    border: 2px double black;
+  }
+
+  .getBtn {
+    width: 75px;
+    height: 20px;
+    font-size: 13px;
+    padding: 2px 0 0 0;
+    margin-top: 40px;
+  }
+
+  .footer {
+    width: 100%;
+    padding: 13px 0 0 0;
+    margin-top: 30px;
+    font-size: 17px;
+    height: 40px;
+    margin-bottom: 2px;
+  }
+
+  .profileimg {
+    width: 170px;
+    height: 175px;
+    margin: 10px auto;
+    margin-top: 35px;
+    border: 1px solid black;
+  }
+
+  .about_section--table {
+    width: 100%;
+    margin-top: 6px;
+  }
+
+  .profile_btn {
+    width: 65%;
+    padding: 7px 3px;
+    margin: 5px auto;
+    font-size: 14px;
+    height: 30px;
+  }
+
+  .repos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px 10px 20px 10px;
+    height: 80px;
+    border-radius: 5px;
+  }
+
+  .repo_name {
+    display: inline-block;
+  }
+
+  .statistc span {
+    padding: 2px 5px 0 5px;
+    font-size: 13px;
+    height: 20px;
+    display: inline-block;
+  }
+
+  .statis {
+    padding: 0px 10px;
+    border-radius: 5px;
+  }
+
+  .tabletd {
+    width: 118%;
+    padding: 14px 0 0 10px;
+    margin: 0 0 0 -46px;
+    height: 44px;
+    border: 1px solid #000;
+    display: block;
+    user-select: none;
+  }
+
+  .about{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    padding: 0;
+  }
+
+  .about__section1 {
+    margin: -10px 35px 0 0;
+  }
+
+  .about__section2--top {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    padding: 0 0px;
+    width: 80%;
+    height: 70px;
+    margin: 0 0 0 180px;
+  }
+
+  .activity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    padding: 0 10px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .about__section2 {
+    height: 400px;
+    margin: 10px 0 0 0;
+    width: 90%;
+    padding: 0;
+  }
+
+  .paragraph {
+    display: inline-block;
+  }
+
+  .tabletd {
+    width: 80%;
+    height: 44px;
+    margin: 0 auto;
+    padding: 5px 0 0 8px;
+  }
+
+  .statistc{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header {
+    width: 102.1%;
+    height: 50px;
+    padding: 4% 10%;
+  }
+  
+  .title {
+    color: #fff;
+    font-size: 18px;
+    user-select: none;
+  }
+
+  .about__section2 {
+    height: 400px;
+    margin: 10px 0 0 -80px;
+    width: 80%;
+    padding: 0;
+  }
+}
